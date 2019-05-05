@@ -7,6 +7,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #eff1f2;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #222;
@@ -41,3 +42,53 @@ textarea::placeholder {
   font-size: inherit;
   color: inherit;
 }
+
+/* HEADER START */
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__inner {
+  max-width: 1190px;
+  width: 100%;
+  display: flex;
+}
+
+.header__rates {
+  padding-left: 42px;
+  padding-right: 42px;
+  max-width: 850px;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.header__rate {
+  font-size: 20px;
+  display: flex;
+}
+
+.header__rate > span {
+  margin-left: 8px;
+}
+
+.header__rate.up > span {
+  color: #cc3939;
+}
+
+.header__rate.down > span {
+  color: #1bc47d;
+}
+
+.header__rates > .header__rate:not(:last-child) {
+  margin-right: 25px;
+}
+
+/* HEADER END */
