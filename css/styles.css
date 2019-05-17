@@ -817,3 +817,58 @@ main {
 }
 
 /* FEED END */
+
+
+/* OVERRIDES START */
+
+.chart {
+  max-width: 600px;
+}
+
+.chart__rate {
+  font-size: 15px;
+}
+
+.market {
+  max-width: 290px;
+}
+
+.market__table .table__content {
+  width: 100%;
+}
+
+.orders {
+  max-width: 290px;
+}
+
+.orders__table .table__content {
+  width: 100%;
+}
+
+.table--big td {
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+.table__no-content {
+  font-size: 12px;
+}
+
+.buy__block {
+  max-width: 160px;
+}
+
+.buy__form {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buy__block-balance {
+  font-size: 15px;
+}
+
+.buy__block-label {
+  font-size: 14px;
+}
+
+/* OVERRIDES END */
