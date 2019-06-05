@@ -969,7 +969,6 @@ main {
   font-size: 22px;
   text-align: center;
   color: #1bc47d;
-  margin-bottom: 32px;
 }
 
 .login__input {
@@ -992,6 +991,7 @@ main {
 }
 
 .login__inputs {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -1021,6 +1021,27 @@ main {
   font-size: 22px;
   line-height: 30px;
   color: #1bc47d;
+}
+
+.login__generate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.login__generate-button {
+  position: absolute;
+  right: 0;
+  font-weight: 300;
+  font-size: 22px;
+  color: #515151;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  bottom: 2px;
 }
 
 /* LOGIN END */
