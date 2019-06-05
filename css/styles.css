@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #eff1f2;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   color: #222;
 }
@@ -53,38 +53,40 @@ main {
 /* HEADER START */
 
 .header {
-  margin-top: 10px;
+  height: 80px;
+  background-color: #fff;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #bebebf;
 }
 
 .header__inner {
-  max-width: 1190px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__rates {
-  padding-left: 42px;
-  padding-right: 42px;
-  max-width: 850px;
-  width: 100%;
-  height: 62px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
   display: flex;
   align-items: center;
-  background-color: #fff;
   box-sizing: border-box;
-  border-radius: 10px;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .header__rate {
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
 }
 
 .header__rate > span {
   margin-left: 8px;
+  color: #404040;
 }
 
 .header__rate.up > span {
@@ -122,28 +124,86 @@ main {
 }
 
 .header__user-info {
-  margin-left: 16px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
 }
 
 .header__user-info > div {
-  color: #515151;
+  color: #404040;
   font-size: 16px;
 }
 
 .header__user-info > div:first-child {
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.header__user-info > div:nth-child(2) {
+  margin-top: -6px;
+}
+
+.header__user-info > div:nth-child(3) {
+  margin-top: -5px;
 }
 
 .header__user-buttons {
-  margin-left: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .header__user-buttons > .button:not(:last-child) {
   margin-bottom: 6px;
+}
+
+.header__nav {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+}
+
+.header__nav-logo {
+  margin-right: 5px;
+  width: 35px;
+  max-width: 35px;
+  min-width: 35px;
+  height: 35px;
+  max-height: 35px;
+  min-height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header__nav-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__holdings {
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.header__holdings > div {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #404040;
+  margin-bottom: 4px;
+}
+
+.header__holdings > span {
+  font-size: 10px;
+  line-height: 14px;
+  color: #404040;
+  display: block;
 }
 
 /* HEADER END */
@@ -175,6 +235,16 @@ main {
   background-color: #cc3939;
 }
 
+.button--gold {
+  background: linear-gradient(
+    89.72deg,
+    #e9c64e 0.05%,
+    #f7e17b 37.5%,
+    #f7e07a 48.42%,
+    #ddb531 99.92%
+  );
+}
+
 /* BUTTON END */
 
 /* LAYOUT START */
@@ -186,7 +256,7 @@ main {
 }
 
 .layout__chart-inner {
-  max-width: 1190px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
 }
@@ -198,18 +268,25 @@ main {
 }
 
 .layout__buy-inner {
-  max-width: 1190px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .layout__buy-inner > div:first-child {
-  width: 385px;
+  width: 360px;
 }
 
 .layout__buy-inner > div:last-child {
-  width: 385px;
+  width: 360px;
 }
 
 .layout__news {
@@ -219,7 +296,7 @@ main {
 }
 
 .layout__news-inner {
-  max-width: 1190px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -227,6 +304,9 @@ main {
 
 .layout__news-inner > div:first-child {
   width: 430px;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  align-self: flex-start;
 }
 
 /* LAYOUT END */
@@ -234,43 +314,18 @@ main {
 /* MARKET START */
 
 .market {
-  max-width: 242px;
+  max-width: 240px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  align-self: flex-start;
+  border-bottom: 0;
 }
 
-.market__nav {
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 56px;
-  display: flex;
-  background-color: #fff;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-}
-
-.market__nav-logo {
-  margin-right: 5px;
-  width: 35px;
-  max-width: 35px;
-  min-width: 35px;
-  height: 35px;
-  max-height: 35px;
-  min-height: 35px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.market__nav-logo > img {
+.market__table .table__content {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.market__table {
-  margin-top: 10px;
 }
 
 /* MARKET END */
@@ -281,7 +336,6 @@ main {
   display: flex;
   border: 1px solid #bebebf;
   box-sizing: border-box;
-  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -292,7 +346,7 @@ main {
   font-size: 16px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #000;
+  color: #404040;
   box-sizing: border-box;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
@@ -335,11 +389,10 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 6px;
 }
 
 .table__title {
-  margin-bottom: -4px;
+  margin-bottom: 5px;
   display: flex;
   padding-top: 12px;
   padding-left: 12px;
@@ -352,12 +405,14 @@ main {
 
 .table__title-text {
   margin-left: 8px;
-  font-size: 24px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #404040;
 }
 
 .table__content {
   position: relative;
-  padding: 12px;
   box-sizing: border-box;
 }
 
@@ -370,54 +425,29 @@ main {
   border-bottom: 1px solid #bebebf;
 }
 
-.table tbody > tr:first-child > td {
-  padding-top: 5px;
-}
-
 .table__content th {
+  border-top: 1px solid #bebebf;
   font-size: 16px;
-  text-align: left;
 }
 
 .table__content td {
   font-weight: 300;
   font-size: 12px;
-  color: #000;
+  color: #515151;
+  min-height: 20px;
+  text-align: center;
+  border-bottom: 1px solid #bebebf;
 }
 
 .table--info .table__content td {
   color: #525252;
+  border-bottom: 0;
 }
 
 .table--info .table__content th {
   font-size: 14px;
   font-weight: normal;
-}
-
-.table--info .table__content th:last-child {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.table--info .table__content th:nth-child(2) {
-  text-align: center;
-}
-
-.table--info .table__content th:nth-child(3) {
-  text-align: center;
-}
-
-.table--info .table__content td:nth-child(2) {
-  text-align: center;
-}
-
-.table--info .table__content td:nth-child(3) {
-  text-align: center;
-}
-
-.table--info .table__content td:last-child {
-  text-align: right;
-  padding-right: 5px;
+  border-top: none;
 }
 
 .table__content tbody > tr:nth-child(odd) {
@@ -455,15 +485,12 @@ main {
   background: transparent;
 }
 
-.table--big thead {
-  border-bottom: 1px solid #bebebf;
-}
-
 .table--big th {
   font-size: 12px;
   white-space: nowrap;
   font-weight: normal;
   padding-right: 5px;
+  border-top: 0;
 }
 
 .table--big tbody > tr:first-child > td {
@@ -471,13 +498,16 @@ main {
 }
 
 .table--big td {
-  font-size: 10px;
+  padding-right: 5px;
 }
 
 .table--big .table__input {
   display: flex;
   margin-bottom: 5px;
   background-color: #f2f2f2;
+  padding-top: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .table--big .table__input > input {
@@ -486,7 +516,7 @@ main {
 
 .table__no-content {
   font-weight: 300;
-  font-size: 10px;
+  font-size: 12px;
   color: #515151;
 }
 
@@ -513,16 +543,16 @@ main {
 /* CHART START */
 
 .chart {
-  max-width: 686px;
+  max-width: 700px;
   width: 100%;
-  padding: 16px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 6px;
-  box-sizing: border-box;
   margin-left: 10px;
   margin-right: 10px;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
 }
 
 .chart__title {
@@ -551,12 +581,13 @@ main {
   margin-right: 16px;
   display: flex;
   padding-bottom: 10px;
-  border-bottom: 1px solid #bebebf;
+  justify-content: space-between;
 }
 
 .chart__rate {
-  font-size: 18px;
   display: flex;
+  font-size: 18px;
+  line-height: 25px;
   color: #515151;
 }
 
@@ -572,13 +603,10 @@ main {
   color: #1bc47d;
 }
 
-.chart__rates > .chart__rate:not(:last-child) {
-  margin-right: 25px;
-}
-
 .chart__content {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* CHART END */
@@ -586,27 +614,31 @@ main {
 /* ORDERS START */
 
 .orders {
-  max-width: 242px;
+  max-width: 240px;
   width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 26px;
 }
 
 .orders__table {
   height: 233px;
   background-color: #fff;
   border-radius: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 8px;
 }
 
 .orders__table .table__content {
-  width: 232px;
+  width: 100%;
   height: 190px;
   overflow: scroll;
-}
-
-.orders > .orders__table:not(:last-child) {
-  margin-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 /* ORDERS END */
@@ -638,34 +670,39 @@ main {
 /* BUY START */
 
 .buy {
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
   background-color: #fff;
   border-radius: 6px;
-  padding: 8px;
   box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .buy__form {
   margin-top: 7px;
   background-color: #f2f2f2;
-  border-radius: 6px;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 8px;
+  border: 1px solid #bebebf;
   box-sizing: border-box;
 }
 
 .buy__form-title {
-  font-size: 22px;
   text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #404040;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .buy__block {
-  max-width: 134px;
+  max-width: 160px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -673,7 +710,7 @@ main {
 
 .buy__block-balance {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   color: #515151;
   margin-bottom: 5px;
 }
@@ -688,6 +725,7 @@ main {
 .buy__block-label {
   font-weight: 300;
   font-size: 16px;
+  line-height: 22px;
   color: #515151;
 }
 
@@ -698,24 +736,21 @@ main {
 
 .buy__block-input > .buy__block-placeholder {
   position: absolute;
-  right: 2px;
+  right: -4px;
   font-size: 10px;
-  color: #bebebf;
+  color: #404040;
 }
 
 .buy__block-percents {
   display: flex;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .buy__block-percents > .radio {
   width: 29px;
   max-width: 29px;
   min-width: 29px;
-}
-
-.buy__block-percents > .radio:not(:last-child) {
-  margin-right: 6px;
 }
 
 .buy__blocks {
@@ -750,6 +785,8 @@ main {
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
   user-select: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .radio input:checked + label {
@@ -762,13 +799,15 @@ main {
 
 .feed {
   width: 100%;
-  max-width: 750px;
+  max-width: 765px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  border-radius: 6px;
-  padding: 12px;
+  padding: 5px;
   box-sizing: border-box;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  align-self: flex-start;
 }
 
 .feed__title {
@@ -791,6 +830,7 @@ main {
 
 .feed__articles {
   display: flex;
+  justify-content: space-between;
 }
 
 .feed__article {
@@ -817,58 +857,3 @@ main {
 }
 
 /* FEED END */
-
-
-/* OVERRIDES START */
-
-.chart {
-  max-width: 600px;
-}
-
-.chart__rate {
-  font-size: 15px;
-}
-
-.market {
-  max-width: 290px;
-}
-
-.market__table .table__content {
-  width: 100%;
-}
-
-.orders {
-  max-width: 290px;
-}
-
-.orders__table .table__content {
-  width: 100%;
-}
-
-.table--big td {
-  font-size: 12px;
-  padding-right: 5px;
-}
-
-.table__no-content {
-  font-size: 12px;
-}
-
-.buy__block {
-  max-width: 160px;
-}
-
-.buy__form {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.buy__block-balance {
-  font-size: 15px;
-}
-
-.buy__block-label {
-  font-size: 14px;
-}
-
-/* OVERRIDES END */

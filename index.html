@@ -15,19 +15,27 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&amp;subset=cyrillic"
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400&amp;subset=cyrillic"
-      rel="stylesheet"
-    />
+     
     <title>Template</title>
   </head>
   <body>
     <header class="header">
       <div class="header__inner">
+        <div class="header__nav">
+          <div class="header__nav-logo">
+            <img src="img/logo.jpg" alt="logo" />
+          </div>
+          <div class="tabs tabs--min">
+            <div class="tabs__tab">Markets</div>
+            <div class="tabs__tab">Orders</div>
+            <div class="tabs__tab">Wallets</div>
+            <div class="tabs__tab tabs__tab--active">Dashboard</div>
+          </div>
+        </div>
         <ul class="header__rates">
           <li class="header__rate down">
             <div>XRP $0.35</div>
@@ -41,10 +49,6 @@
             <div>BCH $298.04</div>
             <span>-3.21%</span>
           </li>
-          <li class="header__rate up">
-            <div>EOS $5.59</div>
-            <span>+1.78%</span>
-          </li>
         </ul>
         <div class="header__user">
           <div class="header__user-avatar">
@@ -55,9 +59,14 @@
             <div>Novice</div>
             <div>Rate: 102/190</div>
           </div>
+          <div class="header__holdings">
+            <div>Estimated Holdings</div>
+            <span>Crypto Ƀ 0.00000000($0.000)</span>
+            <span>Flat $ 0.000</span>
+          </div>
           <div class="header__user-buttons">
-            <button class="button">Buy BTC</button>
             <button class="button button--red">Log out</button>
+            <button class="button button--gold">Buy BTC</button>
           </div>
         </div>
       </div>
@@ -66,17 +75,6 @@
     <main>
       <div class="layout__chart">
         <div class="market">
-          <div class="market__nav">
-            <div class="market__nav-logo">
-              <img src="img/logo.jpg" alt="logo" />
-            </div>
-            <div class="tabs tabs--min">
-              <div class="tabs__tab">Markets</div>
-              <div class="tabs__tab">Orders</div>
-              <div class="tabs__tab">Wallets</div>
-              <div class="tabs__tab tabs__tab--active">Dashboard</div>
-            </div>
-          </div>
           <div class="market__table">
             <div class="table">
               <div class="table__title">
@@ -200,6 +198,16 @@
                       <td>7.481,21</td>
                       <td>0.009923</td>
                     </tr>
+                    <tr>
+                      <td>16:30:21</td>
+                      <td>7.481,21</td>
+                      <td>0.009923</td>
+                    </tr>
+                    <tr>
+                      <td>16:30:21</td>
+                      <td>7.481,21</td>
+                      <td>0.009923</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -212,7 +220,7 @@
               <img src="img/chart.svg" alt="chart" />
             </div>
             <div class="chart__title-text">BTC Chart</div>
-            <div class="tabs">
+            <div class="tabs  ">
               <div class="tabs__tab">30m</div>
               <div class="tabs__tab">Views</div>
               <div class="tabs__tab">Display</div>
@@ -239,7 +247,7 @@
           </ul>
           <div class="chart__content">
             <img style="margin-top: 20px" src="img/chart-1.png" alt="chart" />
-            <div style="display: flex; margin-top: 50px; overflow: hidden;">
+            <div style="display: flex; margin-top: auto; overflow: hidden;">
               <img src="img/chart-2.png" alt="chart" />
               <img src="img/chart-3.png" alt="chart" />
             </div>
@@ -690,7 +698,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="button button--red">Buy BTC</div>
+                  <div class="button button--red">Sell BTC</div>
                 </div>
               </div>
             </form>
