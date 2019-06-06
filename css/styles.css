@@ -1250,3 +1250,127 @@ main {
 }
 
 /* PROFILE END */
+
+/* B-MARKET START */
+
+.b-market {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.b-market__inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.b-market__title {
+  font-weight: 600;
+  font-size: 32px;
+  color: #404040;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* B-MARKETS END */
+
+/* CHART-TABLE START */
+
+.chart-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+}
+
+.chart-table th {
+  font-weight: 600;
+  font-size: 18px;
+  color: #404040;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #bebebf;
+  height: 38px;
+}
+
+.chart-table > thead th:not(:last-child) {
+  border-right: 1px solid #bebebf;
+}
+
+.chart-table > tbody td {
+  font-weight: 300;
+  font-size: 20px;
+  color: #515151;
+  height: 48px;
+  text-align: center;
+}
+
+.chart-table > tbody > tr:not(:last-child) > td {
+  border-bottom: 1px solid #bebebf;
+}
+
+.chart-table > tbody td:not(:last-child) {
+  border-right: 1px solid #bebebf;
+}
+
+.chart-table > tbody > tr:nth-child(even) > td {
+  background-color: #fff;
+}
+
+.chart-table td.up {
+  color: #1bc47d;
+}
+
+.chart-table td.down {
+  color: #cc3939;
+}
+
+/* CHART-TABLE END */
+
+/* PAGINATION START */
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__nav {
+  display: flex;
+}
+
+.pagination__item {
+  width: 30px;
+  height: 30px;
+  background-color: #fdfdfd;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 22px;
+  color: #515151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.pagination__item:hover {
+  background-color: #1bc47d;
+  color: #fff;
+}
+
+.pagination__item:hover > img {
+  filter: brightness(0) invert(1);
+}
+
+.pagination__item.active {
+  background-color: #1bc47d;
+  color: #fff;
+}
+
+.pagination__nav > .pagination__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+/* PAGINATION END */
