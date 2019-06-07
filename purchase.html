@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Some, SEO, Tags" />
+    <meta name="description" content="A description of the page" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <title>Template</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__nav">
+          <div class="header__nav-logo">
+            <img src="img/logo.jpg" alt="logo" />
+          </div>
+          <div class="tabs tabs--min">
+            <div class="tabs__tab">Markets</div>
+            <div class="tabs__tab">Orders</div>
+            <div class="tabs__tab">Wallets</div>
+            <div class="tabs__tab tabs__tab--active">Dashboard</div>
+          </div>
+        </div>
+        <ul class="header__rates">
+          <li class="header__rate down">
+            <div>XRP $0.35</div>
+            <span>-1.69%</span>
+          </li>
+          <li class="header__rate down">
+            <div>LTC $87.23</div>
+            <span>-1.27%</span>
+          </li>
+          <li class="header__rate down">
+            <div>BCH $298.04</div>
+            <span>-3.21%</span>
+          </li>
+        </ul>
+        <div class="header__user">
+          <div class="header__user-avatar">
+            <img src="img/photo.jpg" alt="avatar" />
+          </div>
+          <div class="header__user-info">
+            <div>Alex</div>
+            <div>Novice</div>
+            <div>Rate: 102/190</div>
+          </div>
+          <div class="header__holdings">
+            <div>Estimated Holdings</div>
+            <span>Crypto Ƀ 0.00000000($0.000)</span>
+            <span>Flat $ 0.000</span>
+          </div>
+          <div class="header__user-buttons">
+            <button class="button button--red">Log out</button>
+            <button class="button button--gold">Buy BTC</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="purchase">
+        <div class="purchase__inner">
+          <div class="purchase__title">
+            <div class="purchase__avatar">
+              <img src="img/picture.jpg" alt="avatar" />
+            </div>
+            <span>Purchase Bitcoin - Game Tokens</span>
+          </div>
+          <div class="purchase__sub-title">Payment Methods Accepted</div>
+          <form class="purchase__form">
+            <div class="pay-way__list">
+              <div class="pay-way__item-title">PayPal</div>
+              <input hidden id="paypal" type="radio" name="pay-way" />
+              <label for="paypal" class="pay-way__item">
+                <div class="pay-way__item-img">
+                  <img src="img/pay-way-palka.svg" alt="paypal" />
+                </div>
+              </label>
+              <div class="pay-way__item-title">CoinPayments</div>
+              <input hidden id="coinmarket" type="radio" name="pay-way" />
+              <label for="coinmarket" class="pay-way__item">
+                <div class="pay-way__item-img">
+                  <img src="img/pay-way-coinmarket.svg" alt="coinmarket" />
+                </div>
+              </label>
+            </div>
+            <div class="purchase__table">
+              <table class="chart-table">
+                <tbody>
+                  <tr>
+                    <td class="purchase__td-title">Current BTCG Price</td>
+                    <td class="purchase__td-text">$</td>
+                  </tr>
+                  <tr>
+                    <td class="purchase__td-title">
+                      Number Of BTCG To Purchase
+                    </td>
+                    <td class="purchase__td-text">BTCG</td>
+                  </tr>
+                  <tr>
+                    <td class="purchase__td-title">
+                      Sub-Total Cost Of Purchase
+                    </td>
+                    <td class="purchase__td-text">$</td>
+                  </tr>
+                  <tr>
+                    <td class="purchase__td-title">Voucher Code</td>
+                    <td class="purchase__td-text">BTCG</td>
+                  </tr>
+                  <tr>
+                    <td class="purchase__td-title">Total Discount</td>
+                    <td class="purchase__td-text">$</td>
+                  </tr>
+                  <tr>
+                    <td class="purchase__td-title">Total Payment Required</td>
+                    <td>
+                      <div class="purchase__inputs">
+                        <div class="input-with-text">
+                          <input type="text" class="input" />
+                          <div class="input-text">USD</div>
+                        </div>
+                        <div class="input-with-text">
+                          <input type="text" class="input" />
+                          <div class="input-text">BTCG</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="purchase__recaptcha">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              </div>
+              <div class="purchase__button">
+                <div class="button">CLICK TO CONTINUE</div>
+              </div>
+            </div>
+          </form>
+          <div class="purchase__ps">
+            Your BTCG will be automatically deposited to your gaming wallet
+            after confirmation of payment on next page.
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</html>
