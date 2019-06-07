@@ -246,6 +246,14 @@ main {
   );
 }
 
+.button--refresh {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #bebebf;
+  background-color: #fff;
+  padding: 0;
+}
+
 /* BUTTON END */
 
 /* LAYOUT START */
@@ -665,6 +673,20 @@ main {
   font-size: 12px;
   line-height: 12px;
   color: #7e7d7d;
+}
+
+.input--search {
+  font-weight: 300;
+  font-size: 20px;
+  color: #7e7d7d;
+  padding-left: 15px;
+}
+
+.input--search::placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  color: #7e7d7d;
+  line-height: 40px;
 }
 
 /* INPUT END */
@@ -1425,3 +1447,83 @@ main {
 }
 
 /* COMPETITION END */
+
+/* BALANCE START */
+
+.balance {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.balance__inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.balance__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #404040;
+  text-transform: uppercase;
+}
+
+.balance__sub-title {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.balance__title-info {
+  font-size: 20px;
+  line-height: 27px;
+  color: #404040;
+}
+
+.balance__title-info > span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.balance__nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance__nav .button {
+  height: 40px;
+}
+
+.balance__nav > div {
+  display: flex;
+}
+
+.balance__nav > div > input {
+  height: 40px;
+  margin-right: 14px;
+  max-width: 160px;
+}
+
+.balance__table {
+  margin-top: 10px;
+}
+
+.balance__table th {
+  text-transform: uppercase;
+}
+
+.balance__th-signs {
+  width: 75px;
+}
+
+.balance__td-signs > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance__td-signs > div > img {
+  margin: 0 4px;
+}
+
+/* BALANCE END */
