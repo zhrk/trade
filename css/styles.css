@@ -1527,3 +1527,37 @@ main {
 }
 
 /* BALANCE END */
+
+/* MY-ORDERS START */
+
+.my-orders {
+  display: flex;
+  justify-content: center;
+}
+
+.my-orders__inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.my-orders__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-orders__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #404040;
+  text-transform: uppercase;
+}
+
+.my-orders__nav input {
+  height: 40px;
+  max-width: 160px;
+}
+
+/* MY-ORDERS END */
