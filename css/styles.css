@@ -1506,6 +1506,7 @@ main {
 .balance__inner {
   max-width: 1200px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .balance__title {
@@ -1585,6 +1586,7 @@ main {
 .my-orders__inner {
   max-width: 1200px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .my-orders__nav {
@@ -2014,6 +2016,7 @@ main {
 .leaderboard__inner {
   max-width: 1200px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .leaderboard__title {
