@@ -323,6 +323,7 @@ main {
 /* MARKET START */
 
 .market {
+  position: relative;
   max-width: 240px;
   width: 100%;
   display: flex;
@@ -2099,3 +2100,43 @@ main {
 }
 
 /* LEADERBOARD END */
+
+/* SOCIALS START */
+
+.socials {
+  left: -46px;
+  position: absolute;
+  width: 40px;
+  background-color: #ffffff;
+  border: 1px solid #bebebf;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.socials li {
+  background: #515151;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.socials li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SOCIALS END */
